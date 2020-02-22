@@ -22,74 +22,42 @@
                                     <nav class="collapse">
                                         <ul class="nav nav-pills" id="mainNav">
                                             <li>
-                                                <a class="nav-link active" href="demo-business-consulting.html">
+                                                <a class="nav-link active" href="#home" data-hash data-hash-offset="68">
                                                     Home
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="nav-link" href="demo-business-consulting-about-us.html">
+                                                <a class="nav-link" href="#about_us" data-hash data-hash-offset="68">
                                                     About Us
                                                 </a>
                                             </li>
                                             <li class="dropdown dropdown-primary">
-                                                <a class="dropdown-toggle nav-link" href="demo-business-consulting-expertise.html">
+                                                <a class="nav-link" href="#expertise" data-hash data-hash-offset="68">
                                                     Expertise
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li>
-                                                        <a class="dropdown-item" href="demo-business-consulting-expertise-detail.html">
-                                                            Corporate Finance
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="demo-business-consulting-expertise-detail.html">
-                                                            Corporate Restructuring
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="demo-business-consulting-expertise-detail.html">
-                                                            Economic Consulting
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="demo-business-consulting-expertise-detail.html">
-                                                            Litigation Consulting
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="demo-business-consulting-expertise-detail.html">
-                                                            Strategic Consulting
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="demo-business-consulting-expertise-detail.html">
-                                                            Tech Consulting
-                                                        </a>
-                                                    </li>
-                                                </ul>
+                                                </a>                                            
                                             </li>
                                             <li>
-                                                <a class="nav-link" href="demo-business-consulting-cases.html">
+                                                <a class="nav-link" href="#cases" data-hash data-hash-offset="68">
                                                     Cases
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="nav-link" href="demo-business-consulting-tertimonials.html">
+                                                <a class="nav-link" href="#testimonial" data-hash data-hash-offset="68">
                                                     Testimonials
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="nav-link" href="demo-business-consulting-team.html">
+                                                <a class="nav-link" href="#team" data-hash data-hash-offset="68">
                                                     Team
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="nav-link" href="demo-business-consulting-blog.html">
-                                                    Blog
+                                                <a class="nav-link" href="#product" data-hash data-hash-offset="68">
+                                                    Products
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="nav-link" href="demo-business-consulting-contact-us.html">
+                                                <a class="nav-link" href="#contact_us" data-hash data-hash-offset="68">
                                                     Contact Us
                                                 </a>
                                             </li>
@@ -109,7 +77,7 @@
 
     <div role="main" class="main">
         
-        <div class="slider-container rev_slider_wrapper" style="height: 100%;">
+        <div id="home" class="slider-container rev_slider_wrapper" style="height: 100%;">
             <div id="revolutionSlider" class="slider rev_slider manual" data-version="5.4.8">
                 <ul>
                     <li data-transition="fade">
@@ -176,7 +144,7 @@
             </div>
         </div>
 
-        <section class="looking-for custom-position-1 custom-md-border-top">
+        <section  class="looking-for custom-position-1 custom-md-border-top">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6 col-lg-7">
@@ -206,7 +174,7 @@
             </div>
         </section>
 
-        <section class="about-us custom-section-padding" id="about-us">
+        <section id="about_us" class="about-us custom-section-padding" id="about-us">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-6">
@@ -280,7 +248,7 @@
             </div>
         </section>
 
-        <section class="section-secondary custom-section-padding">
+        <section id="expertise" class="section-secondary custom-section-padding">
             <div class="container">
                 <div class="row mb-4">
                     <div class="col">
@@ -496,7 +464,7 @@
             </div>
         </section>
 
-        <section class="section-secondary custom-section-padding-2">
+        <section id="cases" class="section-secondary custom-section-padding-2">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -652,7 +620,7 @@
             </div>
         </section>
 
-        <section class="custom-section-padding">
+        <section id="testimonial" class="custom-section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -698,7 +666,7 @@
             </div>
         </section>
 
-        <section class="section-secondary custom-section-padding">
+        <section id="team" class="section-secondary custom-section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -708,121 +676,31 @@
                 <div class="row">
                     <div class="col">
                         <div class="owl-carousel show-nav-title custom-dots-style-1 custom-dots-position custom-xs-arrows-style-2 mb-0" data-plugin-options="{'items': 4, 'margin': 20, 'autoHeight': true, 'loop': false, 'nav': false, 'dots': true}">
-                            <div>
-                                <div class="team-item p-0">
-                                    <a href="demo-business-consulting-team-detail.html" class="text-decoration-none">
-                                        <span class="image-wrapper">
-                                            <img src="{{asset('tmp/img/demos/business-consulting/team/team-1.jpg')}}" alt="" class="img-fluid" />
-                                        </span>
-                                    </a>
-                                    <div class="team-infos">
-                                        <div class="share">
-                                            <i class="fas fa-share-alt"></i>
-                                            <div class="share-icons bg-color-light">
-                                                <a href="#" class="text-decoration-none" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
-                                                <a href="#" class="text-decoration-none" title="Share on Instagram"><i class="fab fa-instagram"></i></a>
-                                                <a href="#" class="text-decoration-none" title="Share on Linkedin"><i class="fab fa-linkedin-in"></i></a>
-                                            </div>
-                                        </div>
+                            <?php foreach ($teams as $key => $value) { ?>
+                                <div>
+                                    <div class="team-item p-0">
                                         <a href="demo-business-consulting-team-detail.html" class="text-decoration-none">
-                                            <span class="team-member-name text-color-dark font-weight-semibold text-4">John Doe</span>
-                                            <span class="team-member-desc font-weight-light">CEO</span>
+                                            <span class="image-wrapper">
+                                                <img src="{{asset('tmp/img/demos/business-consulting/team/team-1.jpg')}}" alt="" class="img-fluid" />
+                                            </span>
                                         </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="team-item p-0">
-                                    <a href="demo-business-consulting-team-detail.html" class="text-decoration-none">
-                                        <span class="image-wrapper">
-                                            <img src="{{asset('tmp/img/demos/business-consulting/team/team-2.jpg')}}" alt="" class="img-fluid" />
-                                        </span>
-                                    </a>
-                                    <div class="team-infos">
-                                        <div class="share">
-                                            <i class="fas fa-share-alt"></i>
-                                            <div class="share-icons bg-color-light">
-                                                <a href="#" class="text-decoration-none" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
-                                                <a href="#" class="text-decoration-none" title="Share on Instagram"><i class="fab fa-instagram"></i></a>
-                                                <a href="#" class="text-decoration-none" title="Share on Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                        <div class="team-infos">
+                                            <div class="share">
+                                                <i class="fas fa-share-alt"></i>
+                                                <div class="share-icons bg-color-light">
+                                                    <a href="{{$value->facebook}}" target="_blank" class="text-decoration-none" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                                    <a href="{{$value->instagram}}" target="_blank" class="text-decoration-none" title="Share on Instagram"><i class="fab fa-instagram"></i></a>
+                                                    <a href="{{$value->linkedin}}" target="_blank" class="text-decoration-none" title="Share on Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                                </div>
                                             </div>
+                                            <a href="demo-business-consulting-team-detail.html" class="text-decoration-none">
+                                                <span class="team-member-name text-color-dark font-weight-semibold text-4">{{$value->name}}</span>
+                                                <span class="team-member-desc font-weight-light">{{$value->position}}</span>
+                                            </a>
                                         </div>
-                                        <a href="demo-business-consulting-team-detail.html" class="text-decoration-none">
-                                            <span class="team-member-name text-color-dark font-weight-semibold text-4">Joyce Doe</span>
-                                            <span class="team-member-desc font-weight-light">Finance Expert</span>
-                                        </a>
                                     </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="team-item p-0">
-                                    <a href="demo-business-consulting-team-detail.html" class="text-decoration-none">
-                                        <span class="image-wrapper">
-                                            <img src="{{asset('tmp/img/demos/business-consulting/team/team-3.jpg')}}" alt="" class="img-fluid" />
-                                        </span>
-                                    </a>
-                                    <div class="team-infos">
-                                        <div class="share">
-                                            <i class="fas fa-share-alt"></i>
-                                            <div class="share-icons bg-color-light">
-                                                <a href="#" class="text-decoration-none" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
-                                                <a href="#" class="text-decoration-none" title="Share on Instagram"><i class="fab fa-instagram"></i></a>
-                                                <a href="#" class="text-decoration-none" title="Share on Linkedin"><i class="fab fa-linkedin-in"></i></a>
-                                            </div>
-                                        </div>
-                                        <a href="demo-business-consulting-team-detail.html" class="text-decoration-none">
-                                            <span class="team-member-name text-color-dark font-weight-semibold text-4">Donald Doe</span>
-                                            <span class="team-member-desc font-weight-light">Manufacturing</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="team-item p-0">
-                                    <a href="demo-business-consulting-team-detail.html" class="text-decoration-none">
-                                        <span class="image-wrapper">
-                                            <img src="{{asset('tmp/img/demos/business-consulting/team/team-4.jpg')}}" alt="" class="img-fluid" />
-                                        </span>
-                                    </a>
-                                    <div class="team-infos">
-                                        <div class="share">
-                                            <i class="fas fa-share-alt"></i>
-                                            <div class="share-icons bg-color-light">
-                                                <a href="#" class="text-decoration-none" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
-                                                <a href="#" class="text-decoration-none" title="Share on Instagram"><i class="fab fa-instagram"></i></a>
-                                                <a href="#" class="text-decoration-none" title="Share on Linkedin"><i class="fab fa-linkedin-in"></i></a>
-                                            </div>
-                                        </div>
-                                        <a href="demo-business-consulting-team-detail.html" class="text-decoration-none">
-                                            <span class="team-member-name text-color-dark font-weight-semibold text-4">Jerry Doe</span>
-                                            <span class="team-member-desc font-weight-light">Project Manager</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="team-item p-0">
-                                    <a href="demo-business-consulting-team-detail.html" class="text-decoration-none">
-                                        <span class="image-wrapper">
-                                            <img src="{{asset('tmp/img/demos/business-consulting/team/team-5.jpg')}}" alt="" class="img-fluid" />
-                                        </span>
-                                    </a>
-                                    <div class="team-infos">
-                                        <div class="share">
-                                            <i class="fas fa-share-alt"></i>
-                                            <div class="share-icons bg-color-light">
-                                                <a href="#" class="text-decoration-none" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
-                                                <a href="#" class="text-decoration-none" title="Share on Instagram"><i class="fab fa-instagram"></i></a>
-                                                <a href="#" class="text-decoration-none" title="Share on Linkedin"><i class="fab fa-linkedin-in"></i></a>
-                                            </div>
-                                        </div>
-                                        <a href="demo-business-consulting-team-detail.html" class="text-decoration-none">
-                                            <span class="team-member-name text-color-dark font-weight-semibold text-4">Tom Doe</span>
-                                            <span class="team-member-desc font-weight-light">Business Development</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                                </div>                                
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
@@ -860,65 +738,46 @@
                             </span>
                         </a>
                     </div>
-                </div>
+                </div> 
             </div>
         </section>
 
-        <section class="custom-section-padding">
-            <div class="container">
+        <section id="product" class="section section-height-3 bg-color-grey m-0 border-0">
+            <div class="container py-4">
                 <div class="row">
                     <div class="col">
-                        <h2 class="font-weight-bold text-color-dark">- Our Blog</h2>
+                        <h2 class="font-weight-bold text-color-dark">- Our Product</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <article class="blog-post col">
-                        <div class="row">
-                            <div class="col-sm-8 col-lg-5">
-                                <div class="blog-post-image-wrapper">
-                                    <img src="{{asset('tmp/img/demos/business-consulting/blog/blog-1.jpg')}}" alt class="img-fluid mb-4" />
-                                    <span class="blog-post-date bg-color-primary text-color-light font-weight-bold">
-                                        20
-                                        <span class="month-year font-weight-light">
-                                            Oct-16
-                                        </span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-lg-7">
-                                <h2> Global Opportunities</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat ex finibus urna tincidunt, auctor ullamcorper risus luctus. Nunc et feugiat arcu, in placerat risus. Phasellus condimentum sapien vi.</p>
-                                <hr class="solid">
-                                <div class="post-infos d-flex">
-                                    <span class="info posted-by">
-                                        Posted by:
-                                        <span class="post-author font-weight-semibold text-color-dark">
-                                            John Doe
-                                        </span>
-                                    </span>
-                                    <span class="info comments ml-5">
-                                        Comments:
-                                        <span class="comments-number text-color-primary font-weight-semibold">
-                                            15
-                                        </span>
-                                    </span>
-                                    <span class="info like ml-5">
-                                        Like:
-                                        <span class="like-number font-weight-semibold custom-color-red">
-                                            38
-                                        </span>
-                                    </span>
-                                </div>
-                                <a class="btn btn-outline custom-border-width btn-primary custom-border-radius font-weight-semibold text-uppercase mt-4" href="demo-business-consulting-blog-detail.html" title="Read More">Read More</a>
-                            </div>
+                    <div class="col">
+                        <div class="owl-carousel show-nav-title custom-dots-style-1 custom-dots-position custom-xs-arrows-style-2 mb-0" data-plugin-options="{'items': 4, 'margin': 20, 'autoHeight': true, 'loop': false, 'nav': false, 'dots': true}">
+                            <?php foreach ($products as $key => $value) { ?>
+                                    <div class="portfolio-item">
+                                        <a href="portfolio-single-wide-slider.html">
+                                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders border-radius-0">
+                                                <span class="thumb-info-wrapper border-radius-0">
+                                                    <img src="{{asset('tmp/img/projects/project.jpg')}}" class="img-fluid border-radius-0" alt="">
+                                                    <span class="thumb-info-title">
+                                                        <span class="thumb-info-inner">{{$value->name}}</span>
+                                                        <span class="thumb-info-type">{{$value->category}}</span>
+                                                    </span>
+                                                    <span class="thumb-info-action">
+                                                        <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            <?php } ?>
                         </div>
-                    </article>
+                    </div>
                 </div>
-            </div>
+                        </div>
         </section>
 
 
-        <section class="section section-text-light section-background m-0" style="background: url({{asset('tmp/img/demos/business-consulting/contact/contact-background.jpg')}}); background-size: cover;">
+        <section id="contact_us" class="section section-text-light section-background m-0" style="background: url({{asset('tmp/img/demos/business-consulting/contact/contact-background.jpg')}}); background-size: cover;">
             <div class="container">
                 <div class="row justify-content-md-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
@@ -1033,7 +892,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center pb-4">
-                    <p>2018 © Porto <span class="text-color-light">Business Consulting</span> - Copyright All Rights Reserved</p>
+                    <p>2019 © zedete <span class="text-color-light">Business Consulting</span> - Copyright All Rights Reserved</p>
                 </div>
             </div>
         </div>

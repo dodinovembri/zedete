@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Teams;
+use App\Models\Products;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $data['teams'] = Teams::all();
+        $data['products'] = Products::where('active', 1)->get();
+        
+        return view('home', $data);
     }
 }
