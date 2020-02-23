@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Teams;
 use App\Models\Products;
+use App\Models\Home;
+use App\Models\HomeSlides;
 
 class HomeController extends Controller
 {
@@ -27,6 +29,8 @@ class HomeController extends Controller
     {
         $data['teams'] = Teams::all();
         $data['products'] = Products::where('active', 1)->get();
+        $data['home_slides'] = HomeSlides::all();
+        $data['home'] = Home::first();
         
         return view('home', $data);
     }
