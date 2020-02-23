@@ -7,6 +7,8 @@ use App\Models\Teams;
 use App\Models\Products;
 use App\Models\Home;
 use App\Models\HomeSlides;
+use App\Models\Testimonial;
+use App\Models\ContactUs;
 
 class HomeController extends Controller
 {
@@ -31,6 +33,8 @@ class HomeController extends Controller
         $data['products'] = Products::where('active', 1)->get();
         $data['home_slides'] = HomeSlides::all();
         $data['home'] = Home::first();
+        $data['testimoni'] = Testimonial::all();
+        $data['contact_us'] = ContactUs::first();
         
         return view('home', $data);
     }

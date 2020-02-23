@@ -9,8 +9,8 @@
                     <div class="header-column">
                         <div class="header-row">
                             <div class="header-logo">
-                                <a href="demo-business-consulting.html">
-                                    <img alt="Porto" width="82" height="40" src="{{asset('tmp/img/logo-zedete-2.png')}}">
+                                <a href="{{url('/')}}">
+                                    <img alt="Logo Zedete" width="82" height="40" src="{{asset('tmp/img/logo-zedete-2.png')}}">
                                 </a>
                             </div>
                         </div>
@@ -82,7 +82,7 @@
                 <ul>
                     <?php foreach ($home_slides as $key => $value) { ?>
                     <li data-transition="fade">
-                        <img src="{{asset('tmp/img/demos/business-consulting/slides/slide-1.jpg')}}"  
+                        <img src="{{asset('assets/img')}}/{{$value->photo}}"  
                             alt=""
                             data-bgposition="center center" 
                             data-bgfit="cover" 
@@ -127,7 +127,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 d-flex justify-content-md-end mb-4 mb-md-0">
-                        <a class="text-decoration-none" href="tel:+00112304567" target="_blank" title="Call Us Now">
+                        <a class="text-decoration-none" href="tel:{{$home->call_us_now}}" target="_blank" title="Call Us Now">
                             <span class="custom-call-to-action">
                                 <span class="action-title text-color-primary">Call Us Now</span>
                                 <span class="action-info text-color-light">{{$home->call_us_now}}</span>
@@ -135,7 +135,7 @@
                         </a>
                     </div>
                     <div class="col-md-3 col-lg-2">
-                        <a class="text-decoration-none" href="mail:mail@example.com" target="_blank" title="Email Us Now">
+                        <a class="text-decoration-none" href="mail:{{$home->email_us_now}}" target="_blank" title="Email Us Now">
                             <span class="custom-call-to-action">
                                 <span class="action-title text-color-primary">Email Us Now</span>
                                 <span class="action-info text-color-light">{{$home->email_us_now}}</span>
@@ -602,6 +602,7 @@
                 <div class="row">                       
                     <div class="col">
                         <div class="owl-carousel show-nav-title custom-dots-style-1 custom-dots-position custom-xs-arrows-style-2 mb-0" data-plugin-options="{'items': 1, 'autoHeight': true, 'loop': false, 'nav': false, 'dots': true}">
+                            <?php foreach ($testimoni as $key => $value) { ?>
                             <div class="row">
                                 <div class="col-8 col-sm-4 col-lg-2 text-center pt-5">
                                     <img src="{{asset('tmp/img/demos/business-consulting/testimonials/testimonial-author-2.jpg')}}" alt class="img-fluid custom-rounded-image" />
@@ -609,29 +610,15 @@
                                 <div class="col-12 col-sm-12 col-lg-10">
                                     <div class="testimonial custom-testimonial-style-1 testimonial-with-quotes mb-0">
                                         <blockquote class="pb-2">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget risus porta, tincidunt turpis at, interdum tortor. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce ante tellus, convallis non consectetur sed, pharetra nec ex. Aliquam et tortor nisi. Duis mollis diam nec elit volutpat suscipit.</p>
+                                            <p>{{$value->testimoni}}</p>
                                         </blockquote>
                                         <div class="testimonial-author float-left">
-                                            <p><strong>John Smith</strong><span class="text-color-primary">CEO &amp; Founder - Okler</span></p>
+                                            <p><strong>{{$value->name}}</strong><span class="text-color-primary">{{$value->position}}</span></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-8 col-sm-4 col-lg-2 text-center pt-5">
-                                    <img src="{{asset('tmp/img/demos/business-consulting/testimonials/testimonial-author-3.jpg')}}" alt class="img-fluid custom-rounded-image" />
-                                </div>
-                                <div class="col-12 col-sm-12 col-lg-10">
-                                    <div class="testimonial custom-testimonial-style-1 testimonial-with-quotes mb-0">
-                                        <blockquote class="pb-2">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget risus porta, tincidunt turpis at, interdum tortor. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce ante tellus, convallis non consectetur sed, pharetra nec ex. Aliquam et tortor nisi. Duis mollis diam nec elit volutpat suscipit.</p>
-                                        </blockquote>
-                                        <div class="testimonial-author float-left">
-                                            <p><strong>John Smith</strong><span class="text-color-primary">CEO &amp; Founder - Okler</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
@@ -653,7 +640,7 @@
                                     <div class="team-item p-0">
                                         <a href="demo-business-consulting-team-detail.html" class="text-decoration-none">
                                             <span class="image-wrapper">
-                                                <img src="{{asset('tmp/img/demos/business-consulting/team/team-1.jpg')}}" alt="" class="img-fluid" />
+                                                <img src="{{asset('assets/img')}}/{{$value->photo}}" alt="" class="img-fluid" />
                                             </span>
                                         </a>
                                         <div class="team-infos">
@@ -689,24 +676,24 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 col-lg-7">
                         <div class="looking-for-box">
-                            <h2>- <span class="text-1 custom-secondary-font">Are you looking for a</span><br>
-                            Business plan Consultant?</h2>
-                            <p class="mb-4 mb-md-0">Schedule your company strategy right session now</p>
+                            <h2>- <span class="text-1 custom-secondary-font">{{$home->text_below_title_one}}</span><br>
+                            {{$home->text_below_title_two}}</h2>
+                            <p class="mb-4 mb-md-0">{{$home->text_paragraph}}</p>
                         </div>
                     </div>
                     <div class="col-md-3 d-flex justify-content-md-end mb-4 mb-md-0">
-                        <a class="text-decoration-none" href="tel:+00112304567" target="_blank" title="Call Us Now">
+                        <a class="text-decoration-none" href="tel:{{$home->call_us_now}}" target="_blank" title="Call Us Now">
                             <span class="custom-call-to-action white-border text-color-light">
                                 <span class="action-title">Call Us Now</span>
-                                <span class="action-info">+001 1230 4567</span>
+                                <span class="action-info">{{$home->call_us_now}}</span>
                             </span>
                         </a>
                     </div>
                     <div class="col-md-3 col-lg-2">
-                        <a class="text-decoration-none" href="mail:mail@example.com" target="_blank" title="Email Us Now">
+                        <a class="text-decoration-none" href="mail:{{$home->email_us_now}}" target="_blank" title="Email Us Now">
                             <span class="custom-call-to-action white-border text-color-light">
                                 <span class="action-title">Email Us Now</span>
-                                <span class="action-info">mail@example.com</span>
+                                <span class="action-info">{{$home->email_us_now}}</span>
                             </span>
                         </a>
                     </div>
@@ -754,7 +741,7 @@
                 <div class="row justify-content-md-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
                         <h2 class="font-weight-bold">- Contact Us</h2>
-                        <p class="custom-opacity-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat ex finibus urna tincidunt, auctor ullamcorper.</p>
+                        <p class="custom-opacity-font">{{$contact_us->short_desc}}</p>
                         <div class="row">
                             <div class="col-md-6 custom-sm-margin-top">
                                 <h4 class="mb-1">Call Us</h4>
@@ -762,14 +749,14 @@
                                     <span class="custom-call-to-action-2 text-color-light text-2 custom-opacity-font">
                                         Phone
                                         <span class="info text-5">
-                                            123-456-7890
+                                            {{$home->call_us_now}}
                                         </span>
                                     </span>
                                 </a>
                             </div>
                             <div class="col-md-6 custom-sm-margin-top">
                                 <h4 class="mb-1">Our Location</h4>
-                                <p class="custom-opacity-font">Porto Business Consulting 123 Porto Blvd, Suite 100 New York, NY</p>
+                                <p class="custom-opacity-font">{{$contact_us->our_location}}</p>
                             </div>
                         </div>
                         <div class="row">
