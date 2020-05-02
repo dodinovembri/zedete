@@ -38,4 +38,9 @@ class HomeController extends Controller
         
         return view('home', $data);
     }
+
+    public function product($id)
+    {
+        return view('frontend.product');
+    }
 }

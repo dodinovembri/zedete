@@ -713,7 +713,7 @@
                         <div class="owl-carousel show-nav-title custom-dots-style-1 custom-dots-position custom-xs-arrows-style-2 mb-0" data-plugin-options="{'items': 4, 'margin': 20, 'autoHeight': true, 'loop': false, 'nav': false, 'dots': true}">
                             <?php foreach ($products as $key => $value) { ?>
                                     <div class="portfolio-item">
-                                        <a href="portfolio-single-wide-slider.html">
+                                        <a href="{{url('product')}}/{{$value->id}}">
                                             <span class="thumb-info thumb-info-lighten thumb-info-no-borders border-radius-0">
                                                 <span class="thumb-info-wrapper border-radius-0">
                                                     <img src="{{asset('tmp/img/projects/project.jpg')}}" class="img-fluid border-radius-0" alt="">
