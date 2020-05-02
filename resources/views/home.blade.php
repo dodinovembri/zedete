@@ -638,7 +638,7 @@
                             <?php foreach ($teams as $key => $value) { ?>
                                 <div>
                                     <div class="team-item p-0">
-                                        <a href="demo-business-consulting-team-detail.html" class="text-decoration-none">
+                                        <a href="{{ $value->url_bio }}" target="_blank" class="text-decoration-none">
                                             <span class="image-wrapper">
                                                 <img src="{{asset('assets/img')}}/{{$value->photo}}" alt="" class="img-fluid" />
                                             </span>
